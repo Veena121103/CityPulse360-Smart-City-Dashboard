@@ -52,7 +52,7 @@ section = st.sidebar.radio(
 )
 
 # ==========================================
-# KPI SECTION
+# KPI CALCULATIONS
 # ==========================================
 
 avg_traffic = int(traffic_df['traffic_volume'].mean())
@@ -110,6 +110,28 @@ if section == "Dashboard Overview":
         )
 
     st.success("✅ Smart City Monitoring System Operational")
+
+    # ==========================================
+    # GOVERNANCE & OBSERVABILITY
+    # ==========================================
+
+    st.markdown("---")
+
+    st.subheader("🛡️ Governance & Observability")
+
+    col5, col6, col7, col8 = st.columns(4)
+
+    with col5:
+        st.success("✅ Data Validation Passed")
+
+    with col6:
+        st.success("✅ Streaming Pipeline Healthy")
+
+    with col7:
+        st.success("✅ Dashboard Operational")
+
+    with col8:
+        st.success("✅ Monitoring Active")
 
 # ==========================================
 # TRAFFIC ANALYTICS
@@ -253,28 +275,6 @@ elif section == "AI Summary":
     '''
 
     st.info(summary)
-
-# ==========================================
-# GOVERNANCE & OBSERVABILITY
-# ==========================================
-
-st.markdown("---")
-
-st.subheader("🛡️ Governance & Observability")
-
-col5, col6, col7, col8 = st.columns(4)
-
-with col5:
-    st.success("✅ Data Validation Passed")
-
-with col6:
-    st.success("✅ Streaming Pipeline Healthy")
-
-with col7:
-    st.success("✅ Dashboard Operational")
-
-with col8:
-    st.success("✅ Monitoring Active")
 
 # ==========================================
 # FOOTER
