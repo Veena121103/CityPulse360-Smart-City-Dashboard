@@ -216,3 +216,5 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+data/US_Accidents_March23.csv
+data/NYC311data.csv
